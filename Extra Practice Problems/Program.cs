@@ -155,40 +155,88 @@ namespace Extra_Practice_Problems
             // Present answer to the user.
             // Exercise complete!
 
-            Console.WriteLine("Welcome to the handy-dandy C# calculator! /nPlease input your first interger");
-            int firstNumber = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Welcome to the handy-dandy C# calculator! /nPlease input your first interger");
+            //int firstNumber = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Please input your second interger");
-            int secondNumber = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Please input your second interger");
+            //int secondNumber = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Please input the operator you wish to be used on the two intergers");
-            string math = Console.ReadLine();
-            int calc;
+            //Console.WriteLine("Please input the operator you wish to be used on the two intergers");
+            //string math = Console.ReadLine();
+            //int calc;
 
-            switch (math)
-            {
-                case "+":
-                    calc = (firstNumber + secondNumber);
-                    Console.WriteLine("Answer =" + calc);
-                    break;
-                case "-":
-                    calc = (firstNumber - secondNumber);
-                    Console.WriteLine("Answer =" + calc);
-                    break;
-                case "*":
-                    calc = (firstNumber * secondNumber);
-                    Console.WriteLine("Answer =" + calc);
-                    break;
-                case "/":
-                    calc = (firstNumber / secondNumber);
-                    Console.WriteLine("Answer =" + calc);
-                    break;
-                case "%":
-                    calc = (firstNumber % secondNumber);
-                    Console.WriteLine("Answer =" + calc);
-                    break;
-            }
+            //switch (math)
+            //{
+            //    case "+":
+            //        calc = (firstNumber + secondNumber);
+            //        Console.WriteLine("Answer =" + calc);
+            //        break;
+            //    case "-":
+            //        calc = (firstNumber - secondNumber);
+            //        Console.WriteLine("Answer =" + calc);
+            //        break;
+            //    case "*":
+            //        calc = (firstNumber * secondNumber);
+            //        Console.WriteLine("Answer =" + calc);
+            //        break;
+            //    case "/":
+            //        calc = (firstNumber / secondNumber);
+            //        Console.WriteLine("Answer =" + calc);
+            //        break;
+            //    case "%":
+            //        calc = (firstNumber % secondNumber);
+            //        Console.WriteLine("Answer =" + calc);
+            //        break;
+            //}
+
+            //-------------------------------------------------------------------------------
+
+            // "Loop" practice, page 73, example
+            // Placing CW before a++ allows program to write each loop number
+            // Taking away a++ creates infinite loop!
+
+            //int a = 1;           
+            //while (a<= 10)
+            //{
+            //    Console.WriteLine(a);
+            //    a++;
+            //}
+
+            // "Loop" practice, page 74
+            // Why can't I simply write "int score = int.Parse(Console.ReadLine());" instead of doing that 
+            // weird string/int convert that the book does.... I don't fully understand this
+
+            //int score = -1;
+            //while (score <=0 || score <=10)
+            //{
+            //    string response = Console.ReadLine();
+            //    score = Convert.ToInt32(response);
+            //}
+
+            // "Do-While Loop" practice, pag 75 typical loops occur if certainl conditions are met
+            // The Do-While Loop occurs at least once, and loops if conditions (while operator) are met
+
+            //int score;
+            //do
+            //{
+            //    string response = Console.ReadLine();
+            //    score = Convert.ToInt32(response);
+            //}
+            //while (score <= 0 || score <= 10);
+
+            // "For-Loop" My favorite loop. Has three items in intialization text; 
+            // initial condition (what makes this loop occur once), Condition to check (condition that restarts the loop), and
+            // the action at the end of the loop (what occurs each loop around)
+            // While this example is identical to how they wrote it in the book, it is inoperable
+            // Need to initialize x within {}, but this instructs program to skip the loop after initialization....
+            // Exercise INcomplete! Return later after class
             
+            //for(int x =1; x <= 10; x++);
+            //{                
+            //    Console.Write(x);
+            //}
+
+            //--------------------------------------------------------------------------------
 
 
         }
