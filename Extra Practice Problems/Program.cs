@@ -10,6 +10,7 @@ namespace Extra_Practice_Problems
     {
         static void Main(string[] args)
         {
+            //First six exercises are operator exercises from my cohort's operator homework list.
             //Exercise one. Create a program that has the user type two intergers. 
             //Determine if those intergers are equal or inequal, then have the program inform the use if the intergeres are equal or not.
             //Complete!
@@ -29,6 +30,7 @@ namespace Extra_Practice_Problems
             //    Console.WriteLine("Those intergers aren't equal to one another!");
             //}
 
+            //-------------------------------------------------------------------------------
 
             //Exercise two. Design app that asks for the user to input a number. Have app tell the user if that number is even or odd
             //Exercise Complete!
@@ -44,6 +46,7 @@ namespace Extra_Practice_Problems
             //    Console.WriteLine("Number is odd");
             //}
 
+            //-------------------------------------------------------------------------------
 
             //Exersice three. Create a program that asks the user to input a positive or negative interger.
             // Make the program accurately tell the user if the interger they entered is positive or negative.
@@ -62,7 +65,7 @@ namespace Extra_Practice_Problems
             //    Console.WriteLine("That is a negative number!");
             //}
 
-
+            //-------------------------------------------------------------------------------
 
             //Homework exercise four
             // Allow the user to type a single alphebetical character. 
@@ -102,6 +105,8 @@ namespace Extra_Practice_Problems
             //        break;
             //}
 
+            //-------------------------------------------------------------------------------
+
             //Exercise five. Design app to ask the user for three separate intergers. 
             // Have program recognize which of the three is the greatest interger.
             //Exercise complete!
@@ -124,21 +129,68 @@ namespace Extra_Practice_Problems
             //    Console.WriteLine(thirdNumber + " is the greatest interger!");
             //}
 
+            //-------------------------------------------------------------------------------
 
             //Exercise six.Write a Console application that asks the user for 4 integers.
             //Calculate the mean for these 4 numbers and display the result.
             //Exercise complete!
 
-            Console.WriteLine("Please write in four separate intergers");
+            //Console.WriteLine("Please write in four separate intergers");
+            //int firstNumber = int.Parse(Console.ReadLine());
+            //int secondNumber = int.Parse(Console.ReadLine());
+            //int thirdNumber = int.Parse(Console.ReadLine());
+            //int fourthNumber = int.Parse(Console.ReadLine());
+
+            //double preMean = (firstNumber + secondNumber + thirdNumber + fourthNumber);
+            //double mean = (preMean / 4);
+
+            //Console.WriteLine(mean);
+
+            //-------------------------------------------------------------------------------
+
+            //This practice is from C# Players Guide page 72
+            // Objective: Create an app that acts as a calculator for users
+            // Have them input two intergers, and allow them to input the following math operators: +, -, *, / & %
+            // Run a switchcase that takes thier two intergers and the operator they have chosen and calculate them.
+            // Present answer to the user.
+            // Exercise complete!
+
+            Console.WriteLine("Welcome to the handy-dandy C# calculator! /nPlease input your first interger");
             int firstNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please input your second interger");
             int secondNumber = int.Parse(Console.ReadLine());
-            int thirdNumber = int.Parse(Console.ReadLine());
-            int fourthNumber = int.Parse(Console.ReadLine());
 
-            double preMean = (firstNumber + secondNumber + thirdNumber + fourthNumber);
-            double mean = (preMean / 4);
+            Console.WriteLine("Please input the operator you wish to be used on the two intergers");
+            string math = Console.ReadLine();
+            int calc;
 
-            Console.WriteLine(mean);
+            switch (math)
+            {
+                case "+":
+                    calc = (firstNumber + secondNumber);
+                    Console.WriteLine("Answer =" + calc);
+                    break;
+                case "-":
+                    calc = (firstNumber - secondNumber);
+                    Console.WriteLine("Answer =" + calc);
+                    break;
+                case "*":
+                    calc = (firstNumber * secondNumber);
+                    Console.WriteLine("Answer =" + calc);
+                    break;
+                case "/":
+                    calc = (firstNumber / secondNumber);
+                    Console.WriteLine("Answer =" + calc);
+                    break;
+                case "%":
+                    calc = (firstNumber % secondNumber);
+                    Console.WriteLine("Answer =" + calc);
+                    break;
+            }
+            
+
+
         }
     }
 }
